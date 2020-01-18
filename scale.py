@@ -14,9 +14,8 @@ from ant.core import driver, node, event, message, log
 from ant.core import driver
 from ant.core import node
 from ant.core.constants import *
+from config import *
 
-LOG = log.LogWriter()
-DEBUG = True
 
 def log(msg):
     print(msg)
@@ -230,7 +229,6 @@ class Scales(event.EventCallback):
 
 
 SERIAL = '/dev/ttyUSB0'
-NETKEY = 'B9A521FBBD72C345'.decode('hex')
 
 with Scales(serial=SERIAL, netkey=NETKEY) as scales:
     scales.start()
