@@ -8,3 +8,5 @@ Uses python-ant from https://github.com/baderj/python-ant as suggested in the or
 
 There is nothing special in the handlng of the connection - open a channel, search with infinite timeout - after the scale has finished 
 communicating and disconnects, the ANT device automatically goes back into search mode.
+
+The development stopped here.  Only the Ant code has been written.  I've moved to a C# .Net version to run on a windows server. [MQTT_AntScale.Net](https://github.com/ftkalcevic/MQTT_AntScale.Net)
